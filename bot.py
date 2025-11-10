@@ -246,7 +246,7 @@ async def on_message(message):
             pass
 
     # emergency triggers
-    triggers = ["ele", "medo", "olhos", "onde você está", "estou com medo", "socorro"]
+    triggers = ["você me escuta?", "medo", "olhos", "onde você está", "estou com medo", "socorro"]
     if any(t in lc for t in triggers):
         STATE["apocalypse"] = True
         save_state_file(STATE)
