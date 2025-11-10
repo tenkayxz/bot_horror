@@ -371,7 +371,7 @@ async def cmd_cycleavatar(ctx):
 @is_admin()
 async def cmd_setinterval(ctx, mode: str, min_s: int, max_s: int):
     """
-    Uso: !setinterval normal 60 300
+    Uso: !setinterval normal 60000 300000
     mode: normal | apoc
     """
     mode = mode.lower()
